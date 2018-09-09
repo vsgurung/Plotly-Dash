@@ -14,7 +14,7 @@ from datetime import datetime
 #             error = 'Problem with connection'
 #             return error
 #
-# db_cnxn = get_database_connection('vsgurung','admingurung','localhost',1521,'xe')
+# db_cnxn = get_database_connection(username, password, host, port , sid)
 #
 # def get_dataframe(db_connection):
 #     dataframe = pd.read_sql('SELECT * FROM GAPMINDER', con=db_connection)
@@ -22,9 +22,8 @@ from datetime import datetime
 #
 # df = get_dataframe(db_cnxn)
 
-engine = create_engine('oracle+cx_oracle://vsgurung:admingurung@localhost/xe')
+engine = create_engine('oracle+cx_oracle://username:password@localhost/xe')
 
 mpg_df = pd.read_sql("""SELECT * FROM MPG""", con=engine)
 gapminder_df = pd.read_sql("""SELECT * FROM GAPMINDER""", con=engine)
 iris_df = pd.read_sql("""SELECT * FROM IRIS_DATASET""",con=engine)
-cwrs_df = pd.read_excel(r"E:\My Learning Folder\Dash Python\RSZonesSvlPlan.xlsx", index='SerNo')
