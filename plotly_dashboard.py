@@ -2,9 +2,11 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, Event
+
 from plotly import *
 import plotly.graph_objs as go
 import plotly.figure_factory as ff
+
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -242,4 +244,4 @@ app.scripts.append_script({
 #
 # # #
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True) # set port='0.0.0.0' to access using IP address of the host
