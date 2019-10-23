@@ -72,7 +72,7 @@ pandocfilters==1.4.2
 parso==0.3.1
 partd==0.3.8
 pickleshare==0.7.4
-Pillow==5.2.0
+Pillow==6.2.0
 plotly==3.0.2
 prometheus-client==0.3.0
 prompt-toolkit==2.0.3
@@ -115,7 +115,7 @@ traitlets==4.3.2
 urllib3==1.23
 wcwidth==0.1.7
 webencodings==0.5.1
-Werkzeug==0.14.1
+Werkzeug>=0.15.3
 widgetsnbextension==3.3.0
 wrapt==1.10.11
 xlrd==1.1.0
